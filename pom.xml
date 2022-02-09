@@ -12,6 +12,8 @@
         <module>fx-ui</module>
         <module>fx-net-tools</module>
         <module>fx-http-server</module>
+        <module>fx-db-mark</module>
+        <module>fx-common</module>
     </modules>
 
     <properties>

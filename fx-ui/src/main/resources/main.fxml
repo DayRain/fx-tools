@@ -7,7 +7,7 @@
    <children>
       <Button onAction="#httpServer" mnemonicParsing="false" prefHeight="150.0" prefWidth="400.0" text="HTTP SERVER" />
       <Button onAction="#netTools" mnemonicParsing="false" prefHeight="150.0" prefWidth="400.0" text="NET TOOLS" />
-      <Button mnemonicParsing="false" prefHeight="150.0" prefWidth="400.0" text="DB MARK" />
+      <Button onAction="#dbMark" mnemonicParsing="false" prefHeight="150.0" prefWidth="400.0" text="DB MARK" />
       <Button mnemonicParsing="false" prefHeight="150.0" prefWidth="400.0" text="OTHER" />
    </children>
 </VBox>

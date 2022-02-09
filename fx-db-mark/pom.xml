@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>fx-ui</artifactId>
+    <artifactId>fx-db-mark</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -17,29 +17,22 @@
     </properties>
 
     <dependencies>
-
         <dependency>
             <groupId>com.dayrain</groupId>
-            <artifactId>fx-net-tools</artifactId>
+            <artifactId>fx-common</artifactId>
             <version>0.0.1</version>
         </dependency>
 
         <dependency>
-            <groupId>com.dayrain</groupId>
-            <artifactId>fx-http-server</artifactId>
-            <version>0.0.1</version>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>4.0.3</version>
         </dependency>
 
         <dependency>
-            <groupId>com.dayrain</groupId>
-            <artifactId>fx-db-mark</artifactId>
-            <version>0.0.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.jfoenix</groupId>
-            <artifactId>jfoenix</artifactId>
-            <version>8.0.10</version>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.49</version>
         </dependency>
 
     </dependencies>

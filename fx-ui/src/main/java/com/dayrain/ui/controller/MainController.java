@@ -28,6 +28,18 @@ public class MainController {
         stage.setTitle("FX TOOLS");
         stage.setScene(new Scene(root, 600, 800));
         stage.getIcons().add(ImageUtils.getIcon());
+        stage.setResizable(false);
+        stage.show();
+    }
+
+    @FXML
+    public void dbMark(ActionEvent actionEvent) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/db-mark/db-mark.fxml"));
+        Stage stage = new Stage();
+        stage.setTitle("DB MARK");
+        stage.setScene(new Scene(root, 500, 800));
+        stage.getIcons().add(ImageUtils.getIcon());
+        stage.setResizable(false);
         stage.show();
     }
 }

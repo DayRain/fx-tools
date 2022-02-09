@@ -1,4 +1,4 @@
-package com.dayrain.net.tools;
+package com.dayrain.common;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -11,10 +11,6 @@ import java.util.List;
 
 
 public class CmdUtils {
-
-    public static void main(String[] args) throws IOException {
-        System.out.println(execute("tasklist"));
-    }
 
     public static List<String> execute(String cmd){
         List<String> list = new ArrayList<>();

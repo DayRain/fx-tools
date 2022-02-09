@@ -5,7 +5,6 @@ import com.dayrain.httpserver.component.ConfigHolder;
 import com.dayrain.httpserver.component.ServerConfig;
 import com.dayrain.httpserver.component.ServerThreadHolder;
 import com.dayrain.httpserver.style.IconFactory;
-import javafx.application.Platform;
 import javafx.scene.Scene;
 import javafx.scene.control.SplitPane;
 import javafx.scene.layout.VBox;
@@ -55,8 +54,6 @@ public class HomeView {
         primaryStage.setOnCloseRequest(event -> {
             ConfigHolder.save();
             ServerThreadHolder.stopAll();
-            Platform.exit();
-            System.exit(0);
         });
     }
 

@@ -1,7 +1,7 @@
 package com.dayrain.net.tools.port;
 
-import com.dayrain.net.tools.CmdUtils;
-import com.dayrain.net.tools.ListUtils;
+import com.dayrain.common.CmdUtils;
+import com.dayrain.common.ListUtils;
 import com.dayrain.net.tools.PortCheckService;
 
 import java.util.ArrayList;

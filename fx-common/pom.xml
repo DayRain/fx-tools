@@ -9,18 +9,11 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>fx-net-tools</artifactId>
+    <artifactId>fx-common</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
         <maven.compiler.target>8</maven.compiler.target>
     </properties>
 
-    <dependencies>
-        <dependency>
-            <groupId>com.dayrain</groupId>
-            <artifactId>fx-common</artifactId>
-            <version>0.0.1</version>
-        </dependency>
-    </dependencies>
 </project>

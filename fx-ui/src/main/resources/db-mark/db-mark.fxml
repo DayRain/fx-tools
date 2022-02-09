@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import com.jfoenix.controls.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:controller="com.dayrain.ui.controller.DbMarkController" prefHeight="800.0" prefWidth="500.0"
+            xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <AnchorPane layoutY="10.0" prefHeight="100.0" prefWidth="500.0">
+        <JFXComboBox fx:id="tableComboBox" layoutX="15.0" layoutY="20.0" prefHeight="30.0" prefWidth="200.0"/>
+        <JFXTextField fx:id="pageField" alignment="CENTER" layoutX="325.0" layoutY="20.0" prefHeight="30.0"
+                      prefWidth="100.0" promptText="页数"/>
+        <JFXButton onAction="#jumpPage" layoutX="425.0" layoutY="20.0" text="跳转"/>
+    </AnchorPane>
+
+    <TableView fx:id="columnTable" layoutY="80.0" prefHeight="650.0" prefWidth="500.0" AnchorPane.leftAnchor="0"
+               AnchorPane.rightAnchor="0">
+        <columns>
+            <TableColumn fx:id="columnName" prefWidth="248.0" text="字段名" style="-fx-alignment: center"/>
+            <TableColumn fx:id="comment" prefWidth="248.0" text="备注" style="-fx-alignment: center"/>
+        </columns>
+    </TableView>
+
+    <AnchorPane layoutY="750.0" prefWidth="500">
+        <JFXButton onAction="#prePage" text="上一页" AnchorPane.leftAnchor="0"/>
+        <Label fx:id="pageLabel" prefHeight="30.0" text="(1 / 10)" alignment="CENTER" AnchorPane.leftAnchor="100"
+               AnchorPane.rightAnchor="100"/>
+        <JFXButton onAction="#nextPage" text="下一页" AnchorPane.rightAnchor="0"/>
+    </AnchorPane>
+</AnchorPane>

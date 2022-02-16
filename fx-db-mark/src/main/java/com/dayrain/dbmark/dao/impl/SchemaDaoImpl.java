@@ -115,7 +115,7 @@ public class SchemaDaoImpl implements SchemaDao {
         try {
             Connection connection = DatasourceHolder.getConnection();
             statement = connection.createStatement();
-            statement.execute("alter table " + dbName+ "." + originTableName + " rename to " + dbName + "." + targetTableName);
+            statement.execute("alter table " + dbName + "." + originTableName + " rename to " + dbName + "." + targetTableName);
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
@@ -138,15 +138,15 @@ public class SchemaDaoImpl implements SchemaDao {
             sqlBuilder.append(" not null ");
         }
 
-        if(!StringUtils.isBlank(columnInfo.getDefaultValue())) {
+        if (!StringUtils.isBlank(columnInfo.getDefaultValue())) {
             sqlBuilder.append(" default ").append(columnInfo.getDefaultValue());
         }
 
-        if(!StringUtils.isBlank(columnInfo.getExtra())) {
+        if (!StringUtils.isBlank(columnInfo.getExtra())) {
             sqlBuilder.append(" ").append(columnInfo.getExtra()).append(" ");
         }
 
-        if(!StringUtils.isBlank(columnInfo.getComment())) {
+        if (!StringUtils.isBlank(columnInfo.getComment())) {
             sqlBuilder.append(" comment ").append("\"").append(columnInfo.getComment()).append("\"");
         }
         return sqlBuilder.toString();

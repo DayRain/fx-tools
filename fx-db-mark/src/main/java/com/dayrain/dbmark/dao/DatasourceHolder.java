@@ -9,17 +9,18 @@ import java.sql.SQLException;
 
 public class DatasourceHolder {
     private static DataSource dataSource;
+    private static Connection connection;
     static {
         HikariConfig hikariConfig = new HikariConfig("/hikari.properties");
         dataSource = new HikariDataSource(hikariConfig);
-    }
-
-    public static Connection getConnection() {
         try {
-            return dataSource.getConnection();
+            connection = dataSource.getConnection();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return null;
+    }
+
+    public static Connection getConnection() {
+        return connection;
     }
 }
